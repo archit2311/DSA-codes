@@ -1,0 +1,21 @@
+class Solution {
+public:
+    
+    bool dividesNum(int n,int dig)
+    {
+        return n%dig==0;
+    }
+    int countDigits(int num) {
+        int n=num;
+        int n2=num;
+        int count=0;
+        while(n>0)
+        {
+            int rem=n%10;
+            if (dividesNum(n2,rem)==true)
+                count++;
+            n=n/10;
+        }
+        return count;
+    }
+};
