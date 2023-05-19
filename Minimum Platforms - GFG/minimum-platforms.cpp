@@ -26,7 +26,7 @@ class Solution{
     	        plat=max(count,plat);
     	        i++;
     	    }
-    	    else if(arr[i]>dep[j]){
+    	    else{
     	        count--;
     	        j++;
     	    }
