@@ -1,7 +1,7 @@
 class Solution {
 public:
 
-    // int maxF()
+    //MAKE TRUE
     int maxConsecutiveAnswers(string answerKey, int k) {
         int n=answerKey.size();
         int ans=INT_MIN;
