@@ -36,11 +36,11 @@ public:
         {
             for(int j=1;j<=sum;j++)
             {
-            bool notPick=dp[i-1][j];
+           
             bool pick=false;
             if(arr[i]<=j)
             pick=dp[i-1][j-arr[i]];
-            
+             bool notPick=dp[i-1][j];
             dp[i][j]= pick||notPick;
             }
         }
